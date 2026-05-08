@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+html,
+body,
+* {
+  font-family: "Inter", sans-serif;
+}
+#root {
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+  background: #020617;
+  color: white;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: #020617;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: cyan;
+  border-radius: 999px;
+}
+
+.glow {
+  box-shadow:
+    0 0 20px rgba(34,211,238,0.4),
+    0 0 40px rgba(34,211,238,0.3),
+    0 0 80px rgba(34,211,238,0.2);
+}
+
+::selection {
+  background: cyan;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(34,211,238,0.12), transparent 40%),
+    #020617;
+}
+
+section {
+  position: relative;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* SMOOTH SCROLL */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* GLOBAL TRANSITIONS */
+* {
+  transition-property:
+    background-color,
+    border-color,
+    color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform,
+    filter,
+    backdrop-filter;
+
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+/* PREMIUM SELECTION */
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: white;
+}
+
+/* PREMIUM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(34, 211, 238, 0.4);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.7);
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+
+  50% {
+    transform: translateY(-30px) translateX(20px);
+  }
+
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+.floating-glow {
+  animation: floatGlow 10s ease-in-out infinite;
+}
+
+/* RESPONSIVE TITLES */
+h1 {
+  line-height: 1;
+}
+
+h2 {
+  line-height: 1.05;
+}
+
+@media (max-width: 768px) {
+
+  h1 {
+    line-height: 1.1;
+  }
+
+  h2 {
+    line-height: 1.1;
+  }
+
+}
