@@ -5,6 +5,8 @@ import {
   FaFacebookF,
   FaEnvelope,
   FaArrowRight,
+  FaYoutube,
+  FaSoundcloud
 } from "react-icons/fa";
 
 export default function ContactSection() {
@@ -145,6 +147,90 @@ export default function ContactSection() {
                     <h4 className="text-lg font-bold">
                       https://facebook.com/deeno
                     </h4>
+
+                  </div>
+
+                </a>
+                
+                <a
+                  href="https://on.soundcloud.com/PUb2qHpAaSSoMBfAOi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    flex items-center gap-5
+                    p-5 rounded-2xl
+                    border border-white/10
+                    bg-white/5
+                    hover:border-cyan-400/40
+                    hover:bg-cyan-500/10
+                    transition
+                  "
+                >
+
+                  <div className="
+                    w-14 h-14
+                    rounded-xl
+                    bg-cyan-500/10
+                    flex items-center justify-center
+                    text-cyan-400
+                    text-2xl
+                  ">
+
+                    <FaSoundcloud />
+
+                  </div>
+
+                  <div>
+
+                    <p className="text-sm text-gray-400">
+                      SoundCloud
+                    </p>
+
+                    <p className="text-white">
+                      Deeno Beat
+                    </p>
+
+                  </div>
+
+                </a>
+
+                <a
+                  href="https://youtube.com/@deeno-beat7?si=39919x4Sh4TrXpqi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    flex items-center gap-5
+                    p-5 rounded-2xl
+                    border border-white/10
+                    bg-white/5
+                    hover:border-cyan-400/40
+                    hover:bg-cyan-500/10
+                    transition
+                  "
+                >
+
+                  <div className="
+                    w-14 h-14
+                    rounded-xl
+                    bg-cyan-500/10
+                    flex items-center justify-center
+                    text-cyan-400
+                    text-2xl
+                  ">
+
+                    <FaYoutube />
+
+                </div>
+
+                <div>
+
+                  <p className="text-sm text-gray-400">
+                    YouTube
+                  </p>
+
+                    <p className="text-white">
+                      Deeno Beat
+                    </p>
 
                   </div>
 
