@@ -95,7 +95,12 @@ export default function ContactSection() {
                 </div>
 
                 {/* GITHUB */}
-                <div className="flex items-center gap-5 p-5 rounded-2xl border border-white/10 bg-white/5">
+                <a
+                  href="https://github.com/Deeno-commits"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-5 p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-cyan-400/40 hover:bg-cyan-500/10 transition"
+                >
 
                   <div className="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
 
@@ -110,15 +115,20 @@ export default function ContactSection() {
                     </p>
 
                     <h4 className="text-lg font-bold">
-                      github.com/Deeno-commits
+                      https://github.com/Deeno-commits
                     </h4>
 
                   </div>
 
-                </div>
+                </a>
 
                 {/* FACEBOOK */}
-                <div className="flex items-center gap-5 p-5 rounded-2xl border border-white/10 bg-white/5">
+                <a
+                  href="https://web.facebook.com/profile.php?id=61563843202962"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-5 p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-cyan-400/40 hover:bg-cyan-500/10 transition"
+                >
 
                   <div className="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
 
@@ -133,12 +143,12 @@ export default function ContactSection() {
                     </p>
 
                     <h4 className="text-lg font-bold">
-                      Deeno
+                      https://facebook.com/deeno
                     </h4>
 
                   </div>
 
-                </div>
+                </a>
 
               </div>
 
@@ -151,7 +161,28 @@ export default function ContactSection() {
                 Envoyer
               </h3>
 
-              <form className="space-y-6">
+              <form
+                action="https://formsubmit.co/deenastibeat@gmail.com"
+                method="POST"
+                className="space-y-6"
+              >
+                <input
+                  type="hidden"
+                  name="_captcha"
+                  value="false"
+                />
+
+                <input
+                  type="hidden"
+                  name="_template"
+                  value="table"
+                />
+
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Nouveau message Portfolio Deeno"
+                />
 
                 {/* INPUT */}
                 <input

@@ -65,32 +65,44 @@ export default function Hero() {
           {/* BUTTONS */}
           <div className="mt-10 flex flex-wrap gap-5">
 
-            <button className="px-8 py-4 rounded-full bg-cyan-500 hover:bg-cyan-400 transition text-black font-bold flex items-center gap-3 shadow-[0_0_40px_rgba(34,211,238,0.5)]">
+            <a
+              href="#projets" className="px-8 py-4 rounded-full bg-cyan-500 hover:bg-cyan-400 transition text-black font-bold flex items-center gap-3 shadow-[0_0_40px_rgba(34,211,238,0.5)]">
 
               <FaPlay />
 
               Découvrir le portfolio
 
-            </button>
+            </a>
 
-            <button className="px-8 py-4 rounded-full border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/10 transition">
+            <a 
+              href="#contact" className="px-8 py-4 rounded-full border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/10 transition">
 
               Me contacter
 
-            </button>
+            </a>
 
           </div>
 
           {/* SOCIALS */}
           <div className="mt-10 flex gap-5">
 
-            <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-cyan-400 hover:text-cyan-400 transition">
+            <a
+              href="https://github.com/Deeno-commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-cyan-400 hover:text-cyan-400 transition"
+            >
 
               <FaGithub />
 
             </a>
 
-            <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-cyan-400 hover:text-cyan-400 transition">
+            <a 
+              href="https://web.facebook.com/profile.php?id=61563843202962" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-cyan-400 hover:text-cyan-400 transition"
+            >
 
               <FaFacebookF />
 
